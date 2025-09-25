@@ -20,7 +20,6 @@ public class TC_001 extends BaseClass{
 		hp.clickOnLeadsMenu();
 		LeadsPage lp = new LeadsPage(driver);
 		lp.clickOnCreateNewLeadIcon();
-		//Assert.fail();
 		String firstName = eUtil.getSingleDataFromExcelFile("Leads", 1, 1);
 		String lastName = eUtil.getSingleDataFromExcelFile("Leads", 1, 2);
 		String company = eUtil.getSingleDataFromExcelFile("Leads", 1, 3);
